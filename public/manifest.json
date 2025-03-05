@@ -1,0 +1,37 @@
+{
+  "name": "Chess clock",
+  "short_name": "Chess clock",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48"
+    },
+    {
+      "src": "logo-192x192.png",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "logo-512x512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "fullscreen",
+  "screenshots": [    
+    {
+      "src": "/logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Chess clock"
+    },
+    {
+      "src": "/logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Chess clock"
+    }
+  ]
+}

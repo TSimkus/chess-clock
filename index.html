@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Chess clock</title>
+
+  <link rel="manifest" href="/manifest.json" />
+</head>
+
+<body>
+  <div id="root" style="touch-action: none"></div>
+  <script type="module" src="/src/main.tsx"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/src/serviceWorker.js").then(
+        (registration) => {
+          console.log("Service worker registration successful:", registration);
+        },
+        (error) => {
+          console.error(`Service worker registration failed: ${error}`);
+        },
+      );
+    } else {
+      console.error("Service workers are not supported.");
+    }
+  </script>
+</body>
+
+</html>
